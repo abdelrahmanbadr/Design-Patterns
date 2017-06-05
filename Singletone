@@ -16,7 +16,7 @@ public class HelloWorld
   }
 }
 
-// you can add other public classes to this editor in any order
+
 public class OtherClass
 {
   
