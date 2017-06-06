@@ -1,3 +1,4 @@
+/// this class has aggragation relationship with strategy class
 public class Manager{
      private Strategy strategy;
     public Manager(Strategy strategy){
