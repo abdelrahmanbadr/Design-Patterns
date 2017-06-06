@@ -1,12 +1,14 @@
 public class HelloWorld {
 
      public static void main(String []args){
-         Strategy myObj=new Discount();
          
-         Manager manager=new Manager(new Regular());
          
-           System.out.println(manager.getBill(10));
+           Shop shopWithoutDiscount=new Shop(new Regular());
+           Shop shopWithDiscount=new Shop(new Discount());
          
-        System.out.println(myObj.getBill(10));
+           System.out.println(shopWithoutDiscount.getBill(10));
+          System.out.println(shopWithDiscount.getBill(10));
+         
+        
      }
 }
