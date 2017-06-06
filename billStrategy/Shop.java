@@ -1,5 +1,5 @@
 /// this class has aggragation relationship with strategy class
-public class Manager{
+public class Shop{
      private Strategy strategy;
     public Manager(Strategy strategy){
         this.strategy=strategy;
