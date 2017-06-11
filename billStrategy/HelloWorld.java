@@ -2,7 +2,7 @@ public class HelloWorld {
 
      public static void main(String []args){
          
-         //with strategy design pattern  class can be changed at run time
+         //with strategy design pattern  class behavior can be changed at run time
            Shop shopWithoutDiscount=new Shop(new Regular());
            Shop shopWithDiscount=new Shop(new Discount());
          
