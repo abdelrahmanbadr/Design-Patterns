@@ -1,7 +1,7 @@
 /// this class has aggragation relationship with strategy class
 public class Shop{
      private Strategy strategy;
-    public Manager(Strategy strategy){
+    public Shop(Strategy strategy){
         this.strategy=strategy;
     }
      public int getBill(int num1){
