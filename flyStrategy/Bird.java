@@ -1,5 +1,5 @@
 public class Bird extends Animal{
-    public Bird (){
+    public void Bird (){
         setName("Bird");
         setFly(new Canfly());
     }
