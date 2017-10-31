@@ -1,0 +1,44 @@
+https://www.binpress.com/tutorial/the-factory-design-pattern-explained-by-example/142
+abstract class PizzaFactory {
+
+ abstract public function createToy($toyName);
+
+    public function produceToy($toyName) {
+        $toy = null;
+        $toy = $this->createToy($toyName);
+        $toy->prepare();
+        $toy->package();
+        $toy->label();
+        return $toy;
+    }
+
+   
+}
+class NyToysFactory extends ToysFactory {
+
+    public function createToy($toyName) {
+        $toy = null;
+
+        if ('car'==$toyName) {
+            $toy = new NyCar();
+        } else if ('helicopter'==$toyName) {
+            $toy = new NyHelicopter();
+        }
+
+        return $toy;
+    }
+}
+class CaToysFactory extends ToysFactory {
+
+    public function createToy($toyName) {
+        $toy = null;
+
+        if ('car'==$toyName) {
+            $toy = new CaCar();
+        } else if ('helicopter'==$toyName) {
+            $toy = new CaHelicopter();
+        }
+
+        return $toy;
+    }
+}
