@@ -1,5 +1,18 @@
 
 //factory method and simple factory
+public class PizzaStoreSimpleFactory {
+    public Pizza createTona(){
+        return new tona();
+    }
+    public Pizza createChees(){
+        return new chees();
+    }
+     public Pizza createMeat(){
+        return new Meat();
+    }
+}
+
+///////////////////////////////////
 public class PizzaStore {
     public Pizza orderPizza(String name) {
         Pizza pizza ;
