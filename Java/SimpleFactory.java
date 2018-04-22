@@ -42,8 +42,9 @@ public class SimplePizzaFactory {
 }
 public class PizzaStore {
     SimplePizzaFactory factory;
-    public PizzaStore(SimplePizzaFactory factory){
-    this.factory = factory;
+    public PizzaStore(SimplePizzaFactory factory)
+    {
+        this.factory = factory;
     }
     public Pizza orderPizza(String name) {
        
