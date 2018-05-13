@@ -10,10 +10,15 @@ class Singletone
     
     public static function getSingletoneObject()
     {
-        if(Self::$object == null)
-            Self::$object = new Singletone;
+        Self::setSingletoneObject();
         return Self::$object;
     }
+    public static function setSingletoneObject()
+    {
+        if(Self::$object == null)
+            Self::$object = new Singletone;
+    }
+    
     public function counter()
     {
         $this->number++;
