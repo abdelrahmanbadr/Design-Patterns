@@ -1,5 +1,5 @@
 <?php
-namespace App\DesignPatterns;
+namespace DesignPatterns\Strategy;
 use net\authorize\api\contract\v1 as AnetAPI;
 use net\authorize\api\controller as AnetController;
 use Stripe\Stripe;

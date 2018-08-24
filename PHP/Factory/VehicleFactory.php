@@ -1,5 +1,5 @@
 <?php
-namespace App\DesignPatterns;
+namespace DesignPatterns\Factory;
 class VehicleFactory
 {
     public static function build ($type) 

@@ -1,5 +1,5 @@
 <?php
-namespace App\DesignPatterns;
+namespace DesignPatterns\Singletone;
 class Singletone
 {
     public static $object;
