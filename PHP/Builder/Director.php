@@ -7,10 +7,10 @@ class Director
      */
     public function build(VehicleBuilder $builder): Vehicle
     {
-        $builder->createVehicle();
-        $builder->addEngine();
-        $builder->addColor();
-        $builder->addWheels();
+        $builder->setEngine();
+        $builder->setColor();
+        $builder->setWheels();
         return $builder->getVehicle();
     }
+   
 }

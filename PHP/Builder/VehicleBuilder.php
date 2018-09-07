@@ -2,9 +2,8 @@
 namespace DesignPatterns\Builder;
 interface VehicleBuilder
 {
-    public function createVehicle();
-    public function addEngine();
-    public function addWheels();
-    public function addColor();
+    public function setEngine();
+    public function setWheels();
+    public function setColor();
     public function getVehicle(): Vehicle;
 }

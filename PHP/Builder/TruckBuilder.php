@@ -7,24 +7,24 @@ class TruckBuilder implements VehicleBuilder
      * @var Vehicle
      */
     private $truck;
-    public function createVehicle()
+    public function __construct()
     {
         $this->truck = new Vehicle();
     }
    
-    public function addEngine()
+    public function setEngine()
     {
-        $this->truck->setEngine('truck engine');
+        $this->truck->setEngine("engine");
     }
     
-    public function addWheels()
+    public function setWheels()
     {
         $this->truck->setWheels(8);
     }
 
-    public function addColor()
+    public function setColor()
     {
-        $this->truck->setColor('black');
+        $this->truck->setColor("red");
     }
 
     public function getVehicle(): Vehicle

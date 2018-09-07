@@ -6,24 +6,24 @@ class CarBuilder implements VehicleBuilder
      * @var Vehicle
      */
     private $car;
-    public function createVehicle()
+    public function __construct()
     {
         $this->car = new Vehicle();
     }
    
-    public function addEngine()
+    public function setEngine(string $enginType)
     {
-        $this->car->setEngine('car engine');
+        $this->car->setEngine($enginType);
     }
     
-    public function addWheels()
+    public function  setWheels(int $wheels)
     {
-        $this->car->setWheels(4);
+        $this->car->setWheels($wheels);
     }
 
-    public function addColor()
+    public function setColor(string $color)
     {
-        $this->car->setColor('green');
+        $this->car->setColor($color);
     }
 
     public function getVehicle(): Vehicle
