@@ -1,4 +1,4 @@
-package main
+package singletone
 
 type singletone struct {
 	counter int
