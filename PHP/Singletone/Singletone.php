@@ -4,7 +4,8 @@ class Singletone
 {
     public static $object;
     public  $number = 0;
-
+    
+    //to avoid making object from this class outside it
     private function __construct(){}
 
     
